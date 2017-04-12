@@ -1,11 +1,11 @@
 # Sudoers Cookbook
 
-The default /etc/sudoers file created on installation of the package includes
+The default `/etc/sudoers` file created on installation of the package includes
 the directive:
 
     #includedir /etc/sudoers.d
 
-This will cause sudo to read and parse any files in the /etc/sudoers.d directory
+This will cause sudo to read and parse any files in the `/etc/sudoers.d` directory
 that do not end in '~' or contain a '.' character.
 
 Note that all files in this directory should be mode 0440.
