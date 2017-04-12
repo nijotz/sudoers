@@ -1,0 +1,28 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu/precise64
+  - name: ubuntu/trusty64
+  - name: ubuntu/xenial64
+  - name: centos/6
+  - name: centos/7
+  - name: debian/wheezy64
+  - name: debian/jessie64
+
+suites:
+  - name: default
+    run_list:
+      - recipe[cop_sudoers::default]
+    attributes:
+      sudo:
+        sudoers_d:
+            testing_single: '# this is a test'
+            testing_multiple: |
+              # this is a test
+              # of many lines
+              # in one file
