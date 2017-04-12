@@ -21,3 +21,6 @@ bin/
 
 # Upstream deps
 Berksfile.lock
+
+# Ignore firebase
+firebase-debug.log
