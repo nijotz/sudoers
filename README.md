@@ -23,9 +23,11 @@ description ''
 
 override_attributes(
     ...,
-    'sudoers_d' => {
-        'admins' => {
-            '%adm ALL=(ALL) NOPASSWD:ALL'
+    'sudo' => {
+        'sudoers_d' => {
+            'admins' => {
+                '%adm ALL=(ALL) NOPASSWD:ALL'
+            }
         }
     },
     ...,
